@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+  <link rel="icon" type="image/x-icon" href="vinyl.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/pao2ojw.css">
+</head>
+
+<body>
+
+  <!-- nav -->
+
+
+  <!--HamBurger Icon-->
+  <div class="bars" id="nav-action">
+    <span class="bar"> </span>
+  </div>
+
+  <!--Navbar Links-->
+  <nav id="nav">
+    <ul>
+      <li class="shape-circle circle-one"><a href="contact.html">Contact</a></li>
+      <li class="shape-circle circle-two"><a href="location.html">Locations</a></li>
+      <li class="shape-circle circle-three"><a href="menu.html">Menu</a></li>
+      <li class="shape-circle circle-five">
+        <a href="index.html">Home</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--Main Body Content-->
+
+
+  <script>
+    // Setting up the Variables
+    var bars = document.getElementById("nav-action");
+    var nav = document.getElementById("nav");
+
+
+    //setting up the listener
+    bars.addEventListener("click", barClicked, false);
+
+
+    //setting up the clicked Effect
+    function barClicked() {
+      bars.classList.toggle('active');
+      nav.classList.toggle('visible');
+    }
+
+  </script>
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
+  <!-- bootstrap link -->
+
+
+  <!--end of nav -->
+
+  <div class="text-center container-fluid">
+
+    <div class="page1top"><img src="CoffeeShopLogo.png" class="topimg"></div>
+
+    <div class="p-4">
+      <h4 class="text-center">Contact Us</h4>
+    </div>
+
+    <!-- contact info -->
+    <div class="row p-4">
+      <div class=" left col-4">
+        <h5>EmaIl:</h5>
+      </div>
+      <div class="text-center col-8">
+        <h5>m1xtap3Caf3@gmaIl.com</h5>
+      </div>
+    </div>
+
+    <div class="row p-4">
+      <div class=" left col-4">
+        <h5>Phone:</h5>
+      </div>
+      <div class="text-center col-4">
+        <h5>+1 (404) 567-8901 </h5>
+      </div>
+      <div class="text-right col-4">
+        <h5>Atlanta, GA</h5>
+      </div>
+
+      <div class="row p-4">
+        <div class=" left col-4">
+          <h5>Phone:</h5>
+        </div>
+        <div class="text-center col-4">
+          <h5>+1 (917) 543-2109</h5>
+        </div>
+        <div class="text-right col-4">
+          <h5>New York, NY</h5>
+        </div>
+
+
+        <div class="row p-4">
+          <div class=" left col-4">
+            <h5>Phone:</h5>
+          </div>
+          <div class="text-center col-4">
+            <h5>+1 (773) 987-6141</h5>
+          </div>
+          <div class="text-right col-4">
+            <h5>ChIcago, IL</h5>
+          </div>
+
+          <!-- end of contact info -->
+
+
+          <!-- socials -->
+          <div class="row justify-content-center p-4">
+            <div class="col-2 text-center">
+              <div class="size">
+                <img class="insta" src="insta.webp">
+              </div>
+            </div>
+
+            <div class="col-2 text-center">
+              <div class="size">
+                <img class="twitter" src="twitter.png">
+              </div>
+            </div>
+
+            <div class="col-2 text-center">
+              <div class="size">
+                <img class="tiktok" src="tik.png">
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center p-4">
+            <div class="col-2 text-center">
+              <div class="size">
+                <img class="tiktok" src="facebook.webp">
+              </div>
+            </div>
+
+            <div class="col-2 text-center">
+              <div class="size">
+                <img class="tiktok" src="snap.svg">
+              </div>
+            </div>
+          </div>
+          <!-- end of socials -->
+
+
+
+
+
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <title>Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+  <link rel="icon" type="image/x-icon" href="vinyl.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Amatic SC", sans-serif
+    }
+  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+
+  <!-- nav -->
+
+
+  <!--HamBurger Icon-->
+  <div class="bars" id="nav-action">
+    <span class="bar"> </span>
+  </div>
+
+  <!--Navbar Links-->
+  <nav id="nav">
+    <ul>
+      <li class="shape-circle circle-one"><a href="contact.html">Contact</a></li>
+      <li class="shape-circle circle-two"><a href="location.html">Locations</a></li>
+      <li class="shape-circle circle-three"><a href="menu.html">Menu</a></li>
+      <li class="shape-circle circle-five">
+        <a href="index.html">Home</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--Main Body Content-->
+
+
+  <script>
+    // Setting up the Variables
+    var bars = document.getElementById("nav-action");
+    var nav = document.getElementById("nav");
+
+
+    //setting up the listener
+    bars.addEventListener("click", barClicked, false);
+
+
+    //setting up the clicked Effect
+    function barClicked() {
+      bars.classList.toggle('active');
+      nav.classList.toggle('visible');
+    }
+
+  </script>
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
+  <!-- bootstrap link -->
+
+
+  <!--end of nav -->
+
+  <div class="text-center container-fluid">
+
+    <div class="page1top"><img src="CoffeeShopLogo.png" class="topimg"></div>
+
+    <div id="menu" class="w3-container w3-black w3-xxlarge w3-padding-64">
+      <h1 class="w3-center w3-jumbo w3-padding-32">THE MENU</h1>
+      <div class="w3-row w3-center w3-border w3-border-dark-grey">
+        <a href="#pizza">
+          <div class="w3-third w3-padding-large w3-red">Starters</div>
+        </a>
+        <a href="#pasta">
+          <div class="w3-third w3-padding-large w3-hover-red">Entrees</div>
+        </a>
+        <a href="#starters">
+          <div class="w3-third w3-padding-large w3-hover-red">Sides</div>
+        </a>
+        <a href="#drink">
+          <div class="w3-third w3-padding-large w3-hover-red">Drinks</div>
+        </a>
+        <a href="#salad">
+          <div class="w3-third w3-padding-large w3-hover-red">From the Bakery</div>
+        </a>
+        <a href="#fruit">
+          <div class="w3-third w3-padding-large w3-hover-red">Fruit</div>
+        </a>
+      </div>
+
+      <div id="pizza" class="w3-container w3-white w3-padding-32">
+        <h1><b>Collard Greens</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.99</span></h1>
+        <p class="w3-text-grey">Chidi-ching-ching could buy anything, cop that.</p>
+        <hr>
+
+        <h1><b>Tyler's Potato Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6.99</span></h1>
+        <p class="w3-text-grey">What's good? Is that potato salad?</p>
+        <hr>
+
+        <h1><b>Love Sausage</b> <span class="w3-tag w3-red w3-round">Hot!</span>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$5.99</span>
+        </h1>
+        <p class="w3-text-grey">People telling me in school about sausage, always in the barber shop.</p>
+      </div>
+
+      <h1 id="pasta" class="w3-center w3-jumbo w3-padding-32">ENTREES</h1>
+      <div class="w3-container w3-white w3-padding-32">
+
+        <h1><b>ULT Sandwich</b> <span class="w3-tag w3-grey w3-round">ULTIMATE!</span>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$12.99</span>
+        </h1>
+        <p class="w3-text-grey">In the night time, keep the sandwich outta sight, it's the poltergeist.</p>
+        <hr>
+
+        <h1><b>Biggie's Juicy Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.99</span></h1>
+        <p class="w3-text-grey">It was all a dream!</p>
+        <hr>
+
+        <h1><b>Kanye's French Toast In Paris</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.99</span></h1>
+        <p class="w3-text-grey">No one knows what it means, but it's provocative.</p>
+        <hr>
+
+        <h1><b>A Trap House of Waffles</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.99</span></h1>
+        <p class="w3-text-grey">My trap house a waffle house, my trap house a waffle house.</p>
+      </div>
+
+      <h1 id="starters" class="w3-center w3-jumbo w3-padding-32">SIDES</h1>
+      <div class="w3-container w3-white w3-padding-32">
+
+        <h1><b>HoeCakes</b> <span class="w3-tag w3-grey w3-round">Super!</span>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$9.99</span>
+        </h1>
+        <p class="w3-text-grey">Keep them in check.</p>
+        <hr>
+
+        <h1><b>Forbidden Fruit Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.99</span></h1>
+        <p class="w3-text-grey">Lil' sip, take a lil' sip.</p>
+        <hr>
+
+        <h1><b>Toast Malone</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+        <p class="w3-text-grey">All my brothers got that gas and they be eating toast like a Rasta.</p>
+        <hr>
+
+        <h1><b>Crackers and Modern Jam</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.99</span></h1>
+        <p class="w3-text-grey">This right here my new modern jam, I'm on fire, the new burnin' man</p>
+      </div>
+      <h1 id="drink" class="w3-center w3-jumbo w3-padding-32">DRINKS</h1>
+      <div class="w3-container w3-white w3-padding-32">
+
+        <h1><b>A$AP Coffee</b> <span class="w3-tag w3-grey w3-round">RiRi's Fav</span>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$4.99</span>
+        </h1>
+        <p class="w3-text-grey">I came, I saw, I came, I saw, I drink the coffee, then break the law</p>
+        <hr>
+
+        <h1><b>Rappucino</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.99</span></h1>
+        <p class="w3-text-grey">Choose from flavors such as Drake, Kanye West, Juice WRLD, and Travis Scott.</p>
+        <hr>
+
+        <h1><b>The Story of OJ</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.99</span></h1>
+        <p class="w3-text-grey">O.J. like, "I'm not black, I'm O.J." ...okay</p>
+
+        <h1><b>a lotte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.99</span></h1>
+        <p class="w3-text-grey">How much money you got? A lot!</p>
+      </div>
+      <h1 id="salad" class="w3-center w3-jumbo w3-padding-32">FROM THE BAKERY</h1>
+      <div class="w3-container w3-white w3-padding-32">
+        <h1><b>Drake's Famous Pound Cake</b> <span class="w3-tag w3-grey w3-round">Must Try!</span>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$7.99</span>
+        </h1>
+        <p class="w3-text-grey">Get the-get the-get the-get the money, dollar-dollar</p>
+        <hr>
+
+        <h1><b>Do-Nut Disturb</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.99</span></h1>
+        <p class="w3-text-grey">Silence keeps cloudin' me, hand on my heart.</p>
+        <hr>
+
+        <h1><b>Rapp Snitch Knishes</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6.99</span></h1>
+        <p class="w3-text-grey">Rap snitches, telling all their business</p>
+        <hr>
+        
+        <h1><b>Crush Em Cookies</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.99</span></h1>
+        <p class="w3-text-grey"> Swervin' and smashin' all over the place just like I got road rage</p>
+      </div>
+      <h1 id="fruit" class="w3-center w3-jumbo w3-padding-32">FRUIT</h1>
+      <div class="w3-container w3-white w3-padding-32">
+        <h1><b>Skrawberry Peels</b> <span class="w3-tag w3-grey w3-round">Woah!</span>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$2.99</span>
+        </h1>
+        <p class="w3-text-grey">Smoke on that thrax, it's shaped like a skrawberry.</p>
+        <hr>
+
+        <h1><b>Passionfruit</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.99</span></h1>
+        <p class="w3-text-grey">Passionate from miles away, passive with the things you say</p>
+        <hr>
+
+        <h1><b>Diced Pineapples</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1.99</span></h1>
+        <p class="w3-text-grey">Diced pineapple, tonight you shall reach a height that the sky won't catch you</p>
+        <hr>
+
+        <h1><b>I am Bananas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.49</span></h1>
+        <p class="w3-text-grey">In the middle of the field, throw me a banana
+          I'm throwin' that peel like a quarterback</p>
+      </div>
+
+    </div>
+  </div>
+  <div>
+    <h1 class="merch">Merchandise</h1>
+  </div>
+  <!-- merch -->
+  <div class="row p-4">
+    <div class="col-lg-6">
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="cafehoodie.png" height="420" width="300">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1></h1>
+            <h2>Mixtape Cafe Hoodie</h2>
+            <p>A one of a kind sweatshirt made from 100% cotton</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span class="merch">70</span>$</p>
+            <button type="button">buy now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- shirt -->
+    <div class="col-lg-6">
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="cafeshirt.png" height="420" width="300">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1></h1>
+            <h2>Mixtape Cafe T-Shirt</h2>
+            <p>A logo so cool, we decided to slap it on a shirt and sell it</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span class="merch">45</span>$</p>
+            <button type="button">buy now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- record player -->
+  <div class="row p-4">
+    <div class="col-12">
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="mixtape player.png" height="420" width="300">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1></h1>
+            <h2>Mixtape Cafe Record Player</h2>
+            <p>For those who just love listening to music and want to experience it in a different way</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span class="merch">95</span>$</p>
+            <button type="button">buy now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h1 class="merch">Vinyls</h1>
+  </div>
+
+  <!-- nwts -->
+  <div class="row p-3">
+    <div class="col">
+      <div class="wrapper2">
+        <div class="product-img2">
+          <img src="nwts.jpg" height="300" width="300">
+        </div>
+        <div class="product-info2">
+          <div class="product-text2">
+            <h1></h1>
+            <h2>Nothing Was The Same - Deluxe Vinyl</h2>
+            <p>Enjoy some classic 2013 Drake through songs such as Pound Cake, Started From the Bottom, and Tuscan
+              Leather.</p>
+          </div>
+          <div class="product-price-btn2">
+            <p><span class="merch">60</span>$</p>
+            <button type="button">buy now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--gkmc-->
+    <div class="col">
+      <div class="wrapper2">
+        <div class="product-img2">
+          <img src="gkmc.jpg" height="300" width="300">
+        </div>
+        <div class="product-info2">
+          <div class="product-text2">
+            <h1></h1>
+            <h2>good kid, m.A.A.d. city - Deluxe Vinyl</h2>
+            <p>Enjoy some classic 2012 Kendrick Lamar through songs such as Backseat Freestyle, m.A.A.d city, and
+              Swimming Pools (Drank).</p>
+          </div>
+          <div class="product-price-btn2">
+            <p><span class="merch">25</span>$</p>
+            <button type="button">buy now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--mbdtf-->
+    <div class="col">
+      <div class="wrapper2">
+        <div class="product-img2">
+          <img src="mbdtf.jfif" height="300" width="300">
+        </div>
+        <div class="product-info2">
+          <div class="product-text2">
+            <h1></h1>
+            <h2>My Beautiful Dark Twisted Fantasy - Deluxe Vinyl</h2>
+            <p>Enjoy some classic 2010 Kanye West through songs such as All of the lights, power, and Devil in a New
+              Dress.</p>
+          </div>
+          <div class="product-price-btn2">
+            <p><span class="merch">40</span>$</p>
+            <button type="button">buy now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- end of merch -->
+
+  <br>
+  <br>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
